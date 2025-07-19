@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Personal Website</title>
+  <title>Kishor Mahat | Personal Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,29 +14,30 @@
 
     body {
       font-family: 'Open Sans', sans-serif;
-      background: url('https://images.unsplash.com/photo-1505576391880-40f0d9c11027?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
 
     nav {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 15px 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     nav .logo {
       font-family: 'Playfair Display', serif;
       font-size: 28px;
-      font-weight: bold;
       color: #fff;
     }
 
     nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       gap: 20px;
     }
 
@@ -58,13 +59,13 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     header h1 {
       font-size: 60px;
       font-family: 'Playfair Display', serif;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     header p {
@@ -74,25 +75,64 @@
 
     section {
       padding: 60px 40px;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(0, 0, 0, 0.6);
       margin: 20px;
       border-radius: 15px;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      font-family: 'Playfair Display', serif;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
       font-size: 14px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #ffb6c1;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 40px;
+      }
+
+      section {
+        padding: 40px 20px;
+      }
     }
   </style>
 </head>
 <body>
+
   <nav>
     <div class="logo">Kishor Mahat</div>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -100,26 +140,36 @@
 
   <header id="home">
     <h1>Welcome to My Website</h1>
-    <p>This is a beautiful space to showcase your personality, projects, and contact info.</p>
+    <p>Discover my work, skills, and how to connect with me. Let's build something amazing together.</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I’m a creative, passionate, and professional individual. This is a section where you can tell people who you are, what you do, and what you love.</p>
+    <p>I am a passionate and dedicated individual with a love for learning, building creative solutions, and exploring new technologies. My goal is to make meaningful impact through my work and projects.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p>I offer services in web development, digital design, and content creation. If you need help with your digital presence, I'm here to help you shine online.</p>
   </section>
 
   <section id="portfolio">
-    <h2>My Work</h2>
-    <p>Show off your projects, achievements, and skills here.</p>
+    <h2>Portfolio</h2>
+    <p>Here are some of my recent projects, showcasing my design and development skills. More to come soon!</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: your.email@example.com<br>Phone: +123 456 7890</p>
+    <p>Email: imagekushal@gmail.com<br>Phone: +9779842967667</p>
+    <div class="social-links">
+      <a href="https://WWW.facebook.com/kushal.mahat.9" target="_blank">Facebook</a> |
+      <a href="https://www.youtube.com/@kishormahat8218" target="_blank">YouTube</a>
+    </div>
   </section>
 
   <footer>
     &copy; 2025 Kishor Mahat. All rights reserved.
   </footer>
+
 </body>
 </html>

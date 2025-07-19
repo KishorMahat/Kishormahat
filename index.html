@@ -3,16 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kishor Mahat | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <title>My Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --accent: #00b894;
-      --dark: #2d3436;
-      --text: #2f3542;
-      --bg: linear-gradient(135deg, #dfe6e9, #f1f2f6);
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -20,260 +13,113 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: #f9fbfd;
-      color: var(--text);
-      scroll-behavior: smooth;
+      font-family: 'Open Sans', sans-serif;
+      background: url('https://images.unsplash.com/photo-1505576391880-40f0d9c11027?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
     }
 
-    header {
-      background-color: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 999;
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    header h1 {
-      font-weight: 700;
-      color: var(--accent);
+    nav .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
     }
 
-    nav a {
-      margin-left: 20px;
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
       text-decoration: none;
-      color: var(--dark);
-      font-weight: 500;
-      transition: color 0.3s ease;
+      color: #fff;
+      font-size: 16px;
+      transition: 0.3s;
     }
 
-    nav a:hover {
-      color: var(--accent);
+    nav ul li a:hover {
+      color: #ffb6c1;
     }
 
-    .hero {
-      height: 95vh;
-      background: linear-gradient(145deg, #dff9fb, #f1f2f6);
+    header {
+      height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.5);
     }
 
-    .hero h2 {
-      font-size: 3rem;
+    header h1 {
+      font-size: 60px;
+      font-family: 'Playfair Display', serif;
       margin-bottom: 10px;
-      color: var(--dark);
-      animation: fadeIn 1s ease-in-out;
     }
 
-    .hero p {
-      font-size: 1.2rem;
-      color: #636e72;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
+    header p {
+      font-size: 22px;
+      max-width: 600px;
     }
 
     section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2.2rem;
-      margin-bottom: 40px;
-      color: var(--dark);
-    }
-
-    .about, .contact {
-      text-align: center;
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .cards {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      margin-top: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card i {
-      font-size: 2.5rem;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    input, textarea {
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    button {
-      background: var(--accent);
-      color: white;
-      padding: 12px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #019875;
+      padding: 60px 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 20px;
+      border-radius: 15px;
     }
 
     footer {
-      background: white;
       text-align: center;
-      padding: 30px;
-      color: #999;
-      font-size: 0.9rem;
-      margin-top: 60px;
-    }
-
-    @media(max-width: 600px) {
-      .hero h2 { font-size: 2rem; }
-      nav { flex-direction: column; align-items: flex-start; }
-      nav a { margin: 10px 0; }
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
     }
   </style>
-  <script src="https://kit.fontawesome.com/a2d9d6f778.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<!-- HEADER -->
-<header>
-  <h1>Kishor</h1>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">MySite</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-</header>
 
-<!-- HOME -->
-<section id="home" class="hero">
-  <h2>Hi, I'm Kishor Mahat</h2>
-  <p>Web Developer | Tech Enthusiast | Life-long Learner</p>
-</section>
+  <header id="home">
+    <h1>Welcome to My Website</h1>
+    <p>This is a beautiful space to showcase your personality, projects, and contact info.</p>
+  </header>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2 class="section-title">About Me</h2>
-  <div class="about">
-    <p>
-      I'm a passionate web developer with a love for clean design, accessible code, and functional web experiences. I enjoy solving problems with logic and creativity, and I'm constantly learning new technologies to expand my toolkit.
-    </p>
-  </div>
-</section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m a creative, passionate, and professional individual. This is a section where you can tell people who you are, what you do, and what you love.</p>
+  </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2 class="section-title">Skills</h2>
-  <div class="cards">
-    <div class="card">
-      <i class="fab fa-html5"></i>
-      <h3>HTML</h3>
-      <p>Semantic, accessible and responsive markup structure.</p>
-    </div>
-    <div class="card">
-      <i class="fab fa-css3-alt"></i>
-      <h3>CSS</h3>
-      <p>Modern layouts, animations, and styling best practices.</p>
-    </div>
-    <div class="card">
-      <i class="fab fa-js"></i>
-      <h3>JavaScript</h3>
-      <p>Interactive web applications and dynamic UI elements.</p>
-    </div>
-    <div class="card">
-      <i class="fab fa-react"></i>
-      <h3>React</h3>
-      <p>Efficient UI with reusable components and state management.</p>
-    </div>
-  </div>
-</section>
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <p>Show off your projects, achievements, and skills here.</p>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2 class="section-title">Projects</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://source.unsplash.com/400x250/?website,code" alt="Project 1" />
-      <h3>Portfolio Site</h3>
-      <p>A beautiful portfolio built with HTML, CSS, and vanilla JS.</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x250/?startup,ui" alt="Project 2" />
-      <h3>Landing Page</h3>
-      <p>Modern startup landing page using responsive Flexbox design.</p>
-    </div>
-  </div>
-</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com<br>Phone: +123 456 7890</p>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2 class="section-title">Contact Me</h2>
-  <div class="contact">
-    <form onsubmit="event.preventDefault(); alert('Thanks for reaching out!')">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 Kishor Mahat. Designed with ❤️ in HTML & CSS.</p>
-</footer>
-
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
 </body>
 </html>
